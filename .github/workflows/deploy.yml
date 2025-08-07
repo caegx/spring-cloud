@@ -65,5 +65,5 @@ jobs:
             --no-fail-on-empty-changeset \
             --stack-name spring-boot-serverless-stack \
             --capabilities CAPABILITY_IAM \
-            --region ${{ env.AWS_REGION }}
+            --region ${{ env.AWS_REGION }} \
             --s3-bucket ${{ secrets.SAM_S3_BUCKET }}
