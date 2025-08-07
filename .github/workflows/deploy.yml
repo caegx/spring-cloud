@@ -66,4 +66,4 @@ jobs:
             --stack-name spring-boot-serverless-stack \
             --capabilities CAPABILITY_IAM \
             --region ${{ env.AWS_REGION }}
-            --resolve-s3
+            --s3-bucket ${{ secrets.SAM_S3_BUCKET }}
